@@ -1,0 +1,1 @@
+module.exports = { mongoURI: "mongodb+srv://3DREPO:3DREPO@3drepo.rtbxayo.mongodb.net/"}

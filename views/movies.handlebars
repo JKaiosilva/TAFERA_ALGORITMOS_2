@@ -1,0 +1,42 @@
+<div class="countainer">
+    <h1 class="text-center">Filmes cadastrados</h1>
+    {{#each movies}}
+    <br>
+        <div class="card">
+            <div class="card-body">
+        <div class="input-group mb-3">
+            <label class="input-group-text">Nome</label>
+            <input value="{{name}}" name="name" class="form-control" type="text" placeholder="Insira o Nome" disabled>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text">Pais de Origem</label>
+            <input value="{{country}}" name="country" class="form-control" type="text" placeholder="Insira o Pais de Origem" disabled>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text">Ano</label>
+            <input value="{{date}}" name="date" class="form-control" type="text" placeholder="Insira o Ano" disabled>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text">Genero</label>
+            <input value="{{gener}}" name="gener" class="form-control" type="text" placeholder="Insira o Genero" disabled>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text">Bilheteria</label>
+            <input value="{{access}}" name="access" class="form-control" type="text" placeholder="Insira a Bilheteria" disabled>
+        </div>
+            </div>
+        </div>
+    {{else}}
+    <h1>Nenhum filme cadastrado</h1>
+    {{/each}}
+    <br>
+    {{#each geners}}
+    <br>
+    <a href="/{{name}}">
+        <div class="input-group mb-3">
+            <label class="input-group-text">Genero</label>
+            <input value="{{name}}"class="form-control" disabled>
+        </div>
+        </a>
+        {{/each}}
+</div>

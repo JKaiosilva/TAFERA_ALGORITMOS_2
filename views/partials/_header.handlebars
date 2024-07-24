@@ -1,0 +1,67 @@
+
+<style>
+        .sidebar {
+            position: fixed;
+            top: 0;
+            height: 100%;
+            width: 60px;
+            background-color: #343a40;
+            transition: width 0.3s ease;
+            overflow-x: hidden;
+            padding-top: 20px;
+            z-index: 9999;
+            
+        }
+        
+        .sidebar:hover {
+            width: 200px;
+        }
+
+        .sidebar .nav-link {
+            color: white;
+            text-align: left;
+            padding: 1rem;
+        }
+
+        .sidebar .nav-link:hover {
+            background-color: #495057;
+        }
+
+        .sidebar .nav-link .icon {
+            display: block;
+            font-size: 1.5rem;
+        }
+
+        .sidebar .nav-link .text {
+            display: none;
+            margin-left: 10px;
+        }
+
+        .sidebar:hover .nav-link .text {
+            display: inline;
+        }
+    </style>
+
+<div class="sidebar">
+    <a href="/" class="nav-link">
+        <img src="/img/inicio.png">
+        <span class="text">Início</span>
+    </a>
+    <a href="/movies" class="nav-link">
+        <img src="/img/repo.png">
+        <span class="text">Filmes</span>
+    </a>
+    <a href="/addMovie" class="nav-link">
+        <img src="/img/categoria.png">
+        <span class="text">Adicionar filme</span>
+    </a>
+    <a href="/addGener" class="nav-link">
+        <img src="/img/categoria.png">
+        <span class="text">Adicionar Genero</span>
+    </a>
+    <a href="/top" class="nav-link">
+        <img src="/img/categoria.png">
+        <span class="text">Campeoes de Bilheteria</span>
+    </a>
+</div>
+

@@ -1,0 +1,7 @@
+Instruções para rodar o código
+-baixar ultima versão do node
+-abrir a pasta "TAREFA_ALGORITMOS_2" no vs code
+-no terminal digitar " npm i -y"
+-apos ter instalado os pacotes, digitar "node app.js"
+-digitar no navegador "localhost:8088"
+-use com moderação

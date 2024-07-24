@@ -1,0 +1,30 @@
+<div class="countainer">
+    <h1 class="text-center">Adicione o filme</h1>
+    <form action="/addMovie" method="POST">
+        <div class="input-group mb-3">
+            <label class="input-group-text">Nome</label>
+            <input name="name" class="form-control" type="text" placeholder="Insira o Nome">
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text">Pais de Origem</label>
+            <input name="country" class="form-control" type="text" placeholder="Insira o Pais de Origem">
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text">Ano</label>
+            <input name="date" class="form-control" type="text" placeholder="Insira o Ano">
+        </div>
+          <div class="input-group mb-3">
+            <select name="gener" class="input-group-text">
+              <option>Genero</option>
+              {{#each geners}}
+              <option value="{{_id}}">{{name}}</option> 
+              {{/each}}
+              </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text">Bilheteria</label>
+            <input name="access" class="form-control" type="number" placeholder="Insira a Bilheteria">
+        </div>
+        <button type="submit" class="btn btn-success">Cadastrar</button>
+    </form>
+</div>
